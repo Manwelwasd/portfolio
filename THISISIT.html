@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manny Castillo - Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #00bcd4; /* Cyan */
+            --secondary-color: #006064; /* Dark Cyan */
+            --text-color: #070707; /* White */
+            --background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+            --card-background: rgba(91, 188, 226, 0.9); /* White with transparency */
+            --card-shadow: rgba(0, 0, 0, 0.2);
+            --accent-color: #ff9800; /* Orange */
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url("background.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: var(--text-color);
+        }
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            box-shadow: 0px 2px 5px var(--card-shadow);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            padding: 10px 0;
+            box-shadow: 0px 2px 5px var(--card-shadow);
+        }
+        nav a {
+            color: var(--text-color);
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: var(--background-color);
+            border-radius: 10px;
+        }
+        .section {
+            display: none;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: var(--card-background);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px var(--card-shadow);
+        }
+        .active {
+            display: block;
+        }
+        .profile-picture {
+            display: block;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 4px 6px var(--card-shadow);
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 15px 0;
+            font-size: 0.9rem;
+            box-shadow: 0px -2px 5px var(--card-shadow);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to My Portfolio
+    </header>
+    <nav>
+        <a onclick="showSection('about')">About Me</a>
+        <a onclick="showSection('skills')">Skills</a>
+        <a onclick="showSection('dreams')">Dreams</a>
+        <a onclick="showSection('hobbies')">Hobbies</a>
+        <a onclick="showSection('projects')">Projects</a>
+        <a onclick="showSection('contact')">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section id="about" class="section active">
+            <h2>About Me</h2>
+            <img src="mannypic.jpg" alt="Your Profile Picture" class="profile-picture">
+            <p>Hello! My name is Manny N. Castillo, and I am a Bachelor of Science in Information Technology Student at Cavite State University - Silang Campus. I am passionate about software 
+                development, web design, and problem-solving. Currently, I am learning C++,Java and HTML, with a strong interest in front-end and back-end development. <br> <br>
+            
+                My goal is to leverage technology to create innovative solutions that enhance user experiences and improve efficiency. I can contininuosly strive to expand my skills in programming
+                and software engineering.</p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+            <ul>
+                <li>HTML & C++ Programming</li>
+                <li>Graphic Design</li>
+                <li>Problem Solving & Logical Thinking</li>
+                <li>Team Collaboration & Leadership</li>
+            </ul>
+        </section>
+
+        <section id="dreams" class="section">
+            <h2>My Dreams</h2>
+            <p>As a BSIT Student, i am driven by a passion for technology and problem-solving. My dream is to create meaningfull, innovative solutions that positively impact people's lives. I am especially drawn to software development
+                where i can leverage my skills in languages like C++, Java and HTML to build applications that make a difference. <br> <br> 
+    
+                    Looking ahead, my ultimate goal is to contribute to groundbreaking projects, whether in web development, moile applications, while striving for excellence and pushing the boundaries of what technology can achieve.
+                
+                    With a growth mindset, I am continuously improving my technical skills and learning new concepts. I am excited about the future of technology and look forward to contributing my skills to impactful and innovative projects.
+                </p>
+        </section>
+
+        <section id="hobbies" class="section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Photography 📸</li>
+                <li>Traveling 🌍</li>
+                <li>Reading 📚</li>
+                <li>Online Gaming 🎮</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <img src="portpolyu.jpg" alt="Your Profile Picture" class="profile-picture">
+            <a href="https://drive.google.com/file/d/1HOJ5W6T3DLW5gqBZx2QuZQ1qmh2m3hTm/view?usp=drive_link" class="btn">RESUME</a>
+
+
+            <ul>
+                <li><strong>Portfolio Website</strong> - A personal portfolio showcasing my skills and projects. I am Manny N. Castillo, a dedicated BSIT student at CvSU Silang Campus
+                     with a strong passion for technology and software development. Currently, I am honing my skills in programming languages such as C++, Java, and HTML. 
+                     Throughout my studies, I have developed a keen interest in problem-solving and creating user-friendly applications, demonstrated through projects like a Java-based calculator.
+                      My portfolio showcases my ability to apply theoretical knowledge into practical projects, while continuously learning and improving my technical skills.
+                       I am eager to further expand my expertise and contribute to the tech industry by creating innovative and impactful solutions.</li>
+            
+            <img src="kalku.jpg" alt="Your Profile Picture" class="profile-picture">
+            <a href="SIMPLECALCU.html">Click here to use the Calculator!</a> <br> <br>
+
+
+
+                <li><strong>Web calculator</strong> - A functional web-based calculator using JavaScript..This project is a simple calculator application built using Java,
+                     designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The calculator features a user-friendly graphical interface (GUI) that allows users to input numbers and select operations easily. The program utilizes Java's Swing framework for the GUI, and its core functionality is implemented through event-driven programming. The project demonstrates the use of Java's object-oriented principles, including classes, methods, and exception handling, 
+                    to ensure smooth operations and prevent runtime errors, providing an efficient tool for performing quick calculations.</li>
+            
+            <img src="IT.jpg" alt="Your Profile Picture" class="profile-picture">
+                <li><strong>IT Profession</strong> - My dream in the IT field is to become a software developer who creates innovative solutions that make a real impact on people's lives. I aspire to work on cutting-edge technologies, such as artificial intelligence, machine learning, and web development, and contribute to building applications that solve complex problems. Ultimately, I aim to be part of a dynamic team that values collaboration, creativity, and continuous learning. By leveraging my skills and passion for technology, I hope to make meaningful contributions to the tech industry and help shape the future of technology for a better tomorrow.</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Contact Number: <a href="0956-536-0086">0956-536-0086</a></p>
+            <p>Email: <a href="mailto:mannycastillo010@gmail.com">mannycastillo010@gmail.com</a></p>
+            <p>FaceBook: <a href="Manuel Navarro Castillo"></a>Manuel Navarro Castillo</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Manny N. Castillo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+</html>
